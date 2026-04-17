@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Lei por Elas</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<nav class="menu">
+  <h2 class="logo">Lei por Elas</h2>
+  <div class="links">
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="regras.html">Regras</a>
+    <a href="voluntarios.html">Voluntários</a>
+    <a href="contato.html">Contato</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Defendendo direitos. Protegendo vidas.</h1>
+  <p>Uma rede de apoio jurídico para mulheres em situação de vulnerabilidade</p>
+</section>
+
+<main>
+
+  <section class="card fade">
+    <h2>👩‍⚖️ Sobre nós</h2>
+    <p>Conheça nosso propósito e missão.</p>
+    <a href="sobre.html"><button>Saiba mais</button></a>
+  </section>
+
+  <section class="card fade">
+    <h2>📜 Regras</h2>
+    <p>Diretrizes éticas da atuação.</p>
+    <a href="regras.html"><button>Saiba mais</button></a>
+  </section>
+
+  <section class="card fade">
+    <h2>🤝 Voluntários</h2>
+    <p>Faça parte da mudança.</p>
+    <a href="voluntarios.html"><button>Participar</button></a>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 Lei por Elas</p>
+</footer>
+
+<script>
+const elementos = document.querySelectorAll('.fade');
+
+window.addEventListener('scroll', () => {
+  elementos.forEach(el => {
+    const pos = el.getBoundingClientRect().top;
+    if (pos < window.innerHeight - 50) {
+      el.classList.add('show');
+    }
+  });
+});
+</script>
+
+</body>
+</html>
